@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание | Школа Будущего</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: #0f172a;
+            background: radial-gradient(circle at top, #1e1b4b 0%, #0f172a 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            color: #60a5fa;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 40px;
+        }
+
+        .section-box {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+            padding: 30px;
+            margin-bottom: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .table-wrap { overflow-x: auto; }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 5px;
+            margin-top: 15px;
+        }
+
+        th {
+            background: rgba(96, 165, 250, 0.2);
+            color: #60a5fa;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+        }
+
+        td {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .time-col { color: #4ade80; font-weight: bold; width: 120px; }
+        .lesson-num { color: #94a3b8; font-weight: bold; width: 50px; }
+
+        .back-btn {
+            display: block;
+            width: fit-content;
+            margin: 40px auto;
+            padding: 12px 40px;
+            background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- 1. РАСПИСАНИЕ ЗВОНКОВ -->
+    <div class="section-box">
+        <h2>Расписание звонков</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Урок</th>
+                    <th>Время</th>
+                    <th>Перемена</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td class="lesson-num">1</td><td class="time-col">08:30 - 09:15</td><td>10 мин</td></tr>
+                <tr><td class="lesson-num">2</td><td class="time-col">09:25 - 10:10</td><td>15 мин</td></tr>
+                <tr><td class="lesson-num">3</td><td class="time-col">10:25 - 11:10</td><td>20 мин (Обед)</td></tr>
+                <tr><td class="lesson-num">4</td><td class="time-col">11:30 - 12:15</td><td>20 мин (Обед)</td></tr>
+                <tr><td class="lesson-num">5</td><td class="time-col">12:35 - 13:20</td><td>10 мин</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 2. НАЧАЛЬНЫЕ КЛАССЫ -->
+    <div class="section-box">
+        <h2>Начальные классы (1-4)</h2>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Время</th>
+                        <th>Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пт</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="time-col">08:30</td><td>Письмо</td><td>Матем.</td><td>Русский</td><td>Матем.</td><td>Чтение</td></tr>
+                    <tr><td class="time-col">09:25</td><td>Матем.</td><td>Чтение</td><td>Окр. мир</td><td>Русский</td><td>Изо</td></tr>
+                    <tr><td class="time-col">10:25</td><td>Чтение</td><td>Русский</td><td>Матем.</td><td>Физ-ра</td><td>Музыка</td></tr>
+                    <tr><td class="time-col">11:30</td><td>Окр. мир</td><td>Физ-ра</td><td>Технолог.</td><td>Английский</td><td>Внеурочка</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 3. СТАРШИЕ КЛАССЫ -->
+    <div class="section-box">
+        <h2>Старшие классы (5-11)</h2>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Время</th>
+                        <th>Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пт</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="time-col">08:30</td><td>Алгебра</td><td>История</td><td>Физика</td><td>Химия</td><td>Русский</td></tr>
+                    <tr><td class="time-col">09:25</td><td>Геометрия</td><td>Биология</td><td>Общество</td><td>Английский</td><td>Геогр.</td></tr>
+                    <tr><td class="time-col">10:25</td><td>Информ.</td><td>Русский</td><td>Физ-ра</td><td>Литература</td><td>История</td></tr>
+                    <tr><td class="time-col">11:30</td><td>Физика</td><td>Алгебра</td><td>Английский</td><td>Биология</td><td>Физ-ра</td></tr>
+                    <tr><td class="time-col">12:35</td><td>Литература</td><td>МХК</td><td>География</td><td>-</td><td>Кл. час</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-btn">Вернуться на главную</a>
+</div>
+
+</body>
+</html>

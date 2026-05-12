@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости | Школа Будущего</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: #0f172a;
+            background: radial-gradient(circle at top, #1e1b4b 0%, #0f172a 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #60a5fa;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+        }
+
+        .news-item {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            margin-bottom: 35px;
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: 0.3s;
+            position: relative;
+        }
+
+        .news-item:hover {
+            transform: translateY(-5px);
+            border-color: #60a5fa;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        /* Индикатор даты */
+        .news-date {
+            display: inline-block;
+            color: #4ade80;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            padding: 4px 12px;
+            background: rgba(74, 222, 128, 0.1);
+            border-radius: 50px;
+        }
+
+        .news-title {
+            font-size: 1.6rem;
+            color: #fff;
+            margin: 0 0 20px 0;
+        }
+
+        .news-img {
+            width: 100%;
+            max-height: 380px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .news-text {
+            color: #cbd5e1;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            margin: 0;
+        }
+
+        .back-btn {
+            display: block;
+            width: fit-content;
+            margin: 50px auto 0;
+            padding: 12px 35px;
+            background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+
+        .back-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Новости школы</h2>
+
+        <!-- Новость 1 -->
+        <div class="news-item">
+            <span class="news-date">20 мая 2024</span>
+            <h3 class="news-title">Подготовка к летним лагерям</h3>
+            <img src="images/news1.jpg" alt="Летний лагерь" class="news-img">
+            <p class="news-text">Открыта запись в пришкольный оздоровительный лагерь. Программа включает экскурсии, спортивные игры и творческие мастер-классы для младших классов. Ждем всех желающих!</p>
+        </div>
+
+        <!-- Новость 2 -->
+        <div class="news-item">
+            <span class="news-date">15 мая 2024</span>
+            <h3 class="news-title">Победа на олимпиаде по математике</h3>
+            <img src="images/news2.jpg" alt="Олимпиада" class="news-img">
+            <p class="news-text">Ученик 10 "Б" класса Иванов Александр занял первое место в городской олимпиаде. Поздравляем Александра и его наставника с блестящим достижением в мире точных наук!</p>
+        </div>
+
+        <!-- Новость 3 -->
+        <div class="news-item">
+            <span class="news-date">10 мая 2024</span>
+            <h3 class="news-title">Акция "Чистый город"</h3>
+            <img src="images/news3.jpg" alt="Экология" class="news-img">
+            <p class="news-text">Наши волонтеры собрали более 50 мешков мусора в городском парке. Спасибо каждому участнику за вклад в сохранение чистоты и будущего нашей планеты.</p>
+        </div>
+
+        <!-- Новость 4 -->
+        <div class="news-item">
+            <span class="news-date">05 мая 2024</span>
+            <h3 class="news-title">Новая цифровая лаборатория</h3>
+            <img src="images/news4.jpg" alt="Лаборатория" class="news-img">
+            <p class="news-text">В кабинете физики запущено современное цифровое оборудование. Теперь опыты и практические работы станут еще более захватывающими и точными.</p>
+        </div>
+
+        <a href="index.html" class="back-btn">На главную</a>
+    </div>
+
+</body>
+</html>

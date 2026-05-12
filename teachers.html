@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учителя | Школа Будущего</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: #0f172a;
+            background: radial-gradient(circle at top, #1e1b4b 0%, #0f172a 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #60a5fa;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .intro-text {
+            color: #cbd5e1;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .teachers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .teacher-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 25px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: 0.3s;
+        }
+
+        .teacher-card:hover {
+            transform: translateY(-10px);
+            border-color: #60a5fa;
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+
+        .teacher-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #60a5fa;
+            padding: 5px;
+        }
+
+        h3 {
+            margin: 10px 0 5px 0;
+            font-size: 1.4rem;
+            color: #fff;
+        }
+
+        .subject {
+            color: #4ade80;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .exp {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+
+        .back-btn {
+            display: block;
+            width: fit-content;
+            margin: 50px auto 0;
+            padding: 12px 30px;
+            background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+
+        .back-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-section">
+            <h1>Педагогический коллектив</h1>
+            <p class="intro-text">
+                Наши наставники — это профессионалы, которые помогают раскрывать таланты и вдохновляют на новые открытия каждый день.
+            </p>
+        </div>
+
+        <div class="teachers-grid">
+            <div class="teacher-card">
+                <img src="images/teacher1.jpg" alt="Иванова И.И." class="teacher-img">
+                <h3>Иванова И.И.</h3>
+                <p class="subject">Математика</p>
+                <p class="exp">Стаж работы: 15 лет</p>
+            </div>
+
+            <div class="teacher-card">
+                <img src="images/teacher2.jpg" alt="Петрова П.П." class="teacher-img">
+                <h3>Петрова П.П.</h3>
+                <p class="subject">Литература</p>
+                <p class="exp">Стаж работы: 22 года</p>
+            </div>
+
+            <div class="teacher-card">
+                <img src="images/teacher3.jpg" alt="Сидоров С.С." class="teacher-img">
+                <h3>Сидоров С.С.</h3>
+                <p class="subject">Физика</p>
+                <p class="exp">Стаж работы: 10 лет</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-btn">Вернуться на главную</a>
+    </div>
+
+</body>
+</html>

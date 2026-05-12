@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школа Будущего | Официальный сайт</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: #0f172a;
+            background: radial-gradient(circle at top, #1e1b4b 0%, #0f172a 100%);
+            color: #f8fafc;
+        }
+
+        /* Верхняя панель навигации как на примере */
+        .top-nav {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            padding: 5px 10px;
+            transition: 0.3s;
+            opacity: 0.8;
+        }
+
+        .nav-link:hover {
+            color: #60a5fa;
+            opacity: 1;
+        }
+
+        /* Главный блок с текстом */
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            background: linear-gradient(to right, #fff, #60a5fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 20px 0 40px;
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 15px 35px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn-blue {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Секция статистики как на примере */
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .stat-item b {
+            display: block;
+            font-size: 2.5rem;
+            color: #60a5fa;
+        }
+
+        .stat-item span {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: #94a3b8;
+        }
+
+        /* Футер с контактами */
+        footer {
+            background: #0a0f1d;
+            padding: 60px 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            text-align: left;
+        }
+
+        .footer-col h4 {
+            color: #60a5fa;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .footer-col p {
+            margin: 10px 0;
+            color: #94a3b8;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            font-size: 0.8rem;
+            color: #475569;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .stats { flex-direction: column; gap: 30px; }
+            .footer-grid { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="top-nav">
+    <div class="nav-container">
+        <a href="index.html" class="nav-link">Главная</a>
+        <a href="about.html" class="nav-link">О школе</a>
+        <a href="teachers.html" class="nav-link">Учителя</a>
+        <a href="schedule.html" class="nav-link">Расписание</a>
+        <a href="clubs.html" class="nav-link">Кружки</a>
+        <a href="gallery.html" class="nav-link">Галерея</a>
+        <a href="news.html" class="nav-link">Новости</a>
+        <a href="contacts.html" class="nav-link">Контакты</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>Твое будущее начинается здесь</h1>
+    <p>Современное образование, передовые технологии и лучшие наставники для твоего успеха в цифровом мире завтрашнего дня.</p>
+    
+    <div class="btn-group">
+        <a href="about.html" class="btn btn-blue">Узнать больше</a>
+        <a href="contacts.html" class="btn btn-outline">Связаться</a>
+    </div>
+</div>
+
+<div class="stats">
+    <div class="stat-item"><b>12</b><span>Профильных классов</span></div>
+    <div class="stat-item"><b>50</b><span>Опытных педагогов</span></div>
+    <div class="stat-item"><b>1000</b><span>Учеников ежегодно</span></div>
+    <div class="stat-item"><b>24/7</b><span>Цифровая среда</span></div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h4>Часы работы</h4>
+            <p>Понедельник - Пятница: 08:00 - 19:00</p>
+            <p>Суббота: 09:00 - 15:00</p>
+            <p>Воскресенье: Выходной</p>
+        </div>
+        <div class="footer-col">
+            <h4>Контакты</h4>
+            <p>Телефон: +7 (123) 456-78-90</p>
+            <p>E-mail: school@future.edu</p>
+            <p>Адрес: г. Арсеньев, ул. Центральная, 1</p>
+        </div>
+        <div class="footer-col">
+            <h4>Социальные сети</h4>
+            <p>Telegram: @school_future_tg</p>
+            <p>ВКонтакте: ://vk.com</p>
+            <p>WhatsApp: +7 (999) 111-22-33</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 Школа Будущего. Все права защищены.
+    </div>
+</footer>
+
+</body>
+</html>

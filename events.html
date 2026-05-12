@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мероприятия | Школа Будущего</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: #0f172a;
+            background: radial-gradient(circle at top, #1e1b4b 0%, #0f172a 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #60a5fa;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 20px;
+        }
+
+        .event-item {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 25px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .event-item:hover {
+            transform: scale(1.02);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: #60a5fa;
+        }
+
+        /* Декоративная полоса сбоку */
+        .event-item::before {
+            content: "";
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 5px;
+            background: linear-gradient(to bottom, #60a5fa, #4ade80);
+        }
+
+        .event-date {
+            color: #4ade80;
+            font-weight: bold;
+            font-size: 1rem;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.6rem;
+            color: #fff;
+        }
+
+        p {
+            line-height: 1.7;
+            color: #cbd5e1;
+            margin: 0;
+        }
+
+        .back-btn {
+            display: block;
+            width: fit-content;
+            margin: 50px auto 0;
+            padding: 12px 35px;
+            background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+
+        .back-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Календарь событий</h2>
+        
+        <div class="event-item">
+            <span class="event-date">1 сентября</span>
+            <h3>День знаний</h3>
+            <p>Торжественная линейка, праздничный концерт и первые классные часы. Традиционно звучит первый звонок, открывающий новый учебный год для всех наших учеников.</p>
+        </div>
+
+        <div class="event-item">
+            <span class="event-date">5 октября</span>
+            <h3>День учителя</h3>
+            <p>Традиционный день самоуправления и праздничный концерт. Ученики старших классов пробуют себя в роли педагогов, проводя настоящие уроки.</p>
+        </div>
+
+        <div class="event-item">
+            <span class="event-date">25 октября</span>
+            <h3>Осенний бал</h3>
+            <p>Конкурс тематических костюмов, танцевальная программа и выбор Короля и Королевы бала в празднично украшенном актовом зале.</p>
+        </div>
+
+        <div class="event-item">
+            <span class="event-date">28 декабря</span>
+            <h3>Новогодний карнавал</h3>
+            <p>Театрализованная сказка, подарки и большая дискотека. Школа преображается, погружая каждого в атмосферу зимнего волшебства.</p>
+        </div>
+
+        <div class="event-item">
+            <span class="event-date">25 мая</span>
+            <h3>Последний звонок</h3>
+            <p>Трогательное прощание выпускников со школой, школьный вальс и запуск шаров, знаменующий окончание важного жизненного этапа.</p>
+        </div>
+
+        <a href="index.html" class="back-btn">Вернуться на главную</a>
+    </div>
+
+</body>
+</html>
